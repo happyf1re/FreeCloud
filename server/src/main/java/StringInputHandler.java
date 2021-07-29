@@ -11,6 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+//НЕ ИСПОЛЬЗУЕТСЯ
 public class StringInputHandler extends ChannelInboundHandlerAdapter {
 
     private static final String LS_COMMAND = "ls view all files from current director\n";

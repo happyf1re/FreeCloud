@@ -25,8 +25,7 @@ public class ServerMain  {
                             socketChannel.pipeline().addLast(
                                     new ObjectDecoder(150*1024*1024, ClassResolvers.cacheDisabled(null)),
                                     new ObjectEncoder(),
-                                    new ClientHandler(),
-                                    new StringInputHandler());
+                                    new ClientHandler());
                         }
                     }).option(ChannelOption.SO_BACKLOG, 128)
                     .option(ChannelOption.TCP_NODELAY, true)
